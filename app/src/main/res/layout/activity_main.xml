@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="⚡ AutoClicker"
+            android:textColor="#FFFFFF"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ton auto-clicker personnel — aucun tracking, aucun réseau."
+            android:textColor="#AAAAAA"
+            android:textSize="14sp"
+            android:layout_marginBottom="32dp"/>
+
+        <!-- STATUS -->
+        <TextView
+            android:id="@+id/statusText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#1E1E1E"
+            android:padding="16dp"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:lineSpacingExtra="6dp"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- PERMISSIONS -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ÉTAPE 1 — Permissions"
+            android:textColor="#BB86FC"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.1"
+            android:layout_marginBottom="12dp"/>
+
+        <Button
+            android:id="@+id/btnOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Afficher par-dessus les autres apps →"
+            android:backgroundTint="#BB86FC"
+            android:textColor="#000000"
+            android:layout_marginBottom="10dp"/>
+
+        <Button
+            android:id="@+id/btnAccessibility"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Activer le service d'accessibilité →"
+            android:backgroundTint="#BB86FC"
+            android:textColor="#000000"
+            android:layout_marginBottom="32dp"/>
+
+        <!-- CONFIG -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ÉTAPE 2 — Configuration"
+            android:textColor="#BB86FC"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.1"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Intervalle entre chaque clic (ms)"
+            android:textColor="#CCCCCC"
+            android:textSize="14sp"
+            android:layout_marginBottom="6dp"/>
+
+        <EditText
+            android:id="@+id/speedInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ex: 500"
+            android:text="1000"
+            android:inputType="number"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#666666"
+            android:backgroundTint="#BB86FC"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nombre de cibles"
+            android:textColor="#CCCCCC"
+            android:textSize="14sp"
+            android:layout_marginBottom="6dp"/>
+
+        <EditText
+            android:id="@+id/targetCountInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ex: 2"
+            android:text="1"
+            android:inputType="number"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#666666"
+            android:backgroundTint="#BB86FC"
+            android:layout_marginBottom="32dp"/>
+
+        <!-- LAUNCH -->
+        <Button
+            android:id="@+id/btnStartService"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="▶  Lancer les cibles flottantes"
+            android:backgroundTint="#03DAC6"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Le bouton ▶/⏸ apparaîtra sur le bord droit de l'écran. Tu peux le faire glisser verticalement."
+            android:textColor="#777777"
+            android:textSize="12sp"
+            android:layout_marginTop="12dp"/>
+
+    </LinearLayout>
+</ScrollView>

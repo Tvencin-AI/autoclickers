@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AutoClicker</string>
+    <string name="accessibility_description">Permet à AutoClicker de simuler des appuis sur l\'écran. Aucune donnée n\'est collectée.</string>
+</resources>
