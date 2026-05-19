@@ -1,5 +1,4 @@
 name: Build AutoClicker APK
-name: Build AutoClicker APK
 
 on:
   push:
